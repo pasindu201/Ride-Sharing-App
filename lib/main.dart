@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:users/screens/login_screen.dart';
 import 'package:users/screens/register_screen.dart';
+import 'package:users/splash_screen/splash_screen.dart';
 import 'package:users/theme_provider/theme_provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: MyThemes.lightTheme,
       darkTheme: MyThemes.darkTheme,
-      home: RegisterScreen(),
+      home: SplashScreen(),
     );
   }
 }
